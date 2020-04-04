@@ -6,5 +6,8 @@ Rails.application.routes.draw do
     get "/courses/:name" => "courses#show"
     patch "/courses/:name" => "courses#update"
     delete "/courses/:name" => "courses#destroy"
+
+    get "/users" => "users#index"
+    post "/users" => "users#create"
   end
 end
