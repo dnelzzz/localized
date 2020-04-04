@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     post "/courses" => "courses#create"
     get "/courses/:name" => "courses#show"
     patch "/courses/:name" => "courses#update"
+    delete "/courses/:name" => "courses#destroy"
   end
 end
